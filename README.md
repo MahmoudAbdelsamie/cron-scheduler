@@ -27,7 +27,7 @@ Unit tests are included to ensure the correct functionality of the Job and JobMa
 - **In-Process Scheduler**: Running the scheduler within a single process is simpler but may not be suitable for distributed systems or for applications requiring high availability and fault tolerance.
 
 ## Example Usage
-\`\`\`javascript
+```javascript
 const JobManager = require('./src/jobs/jobManager');
 
 const jobManager = new JobManager();
@@ -39,7 +39,7 @@ jobManager.addJob('job1', '30m', '1h', () => {
 jobManager.addJob('job2', '15m', '2h', () => {
     console.log('Executing job2...');
 });
-\`\`\`
+```
 
 ## Future Improvements
 - **Distributed Scheduling**: Extend the scheduler to support distributed environments.
